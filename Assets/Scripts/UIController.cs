@@ -57,6 +57,8 @@ public class UIController : MonoBehaviour
 
     public void ActivateMenu(SubMenu sub)
     {
+        sub.init();
+
         sub.gameObject.SetActive(true);
         sub.IsActive = true;
 

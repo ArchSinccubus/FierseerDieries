@@ -21,7 +21,11 @@ public class InventoryMenu : SubMenu
 
             item.itemDroppedEvent += ItemDroppedMethod;
 
-            item.GetComponent<Image>().image = GameController.instance.Inventory[i].Image;
+            item.Image.sprite = GameController.instance.Inventory[i].Image;
+
+            item.transform.SetParent(InventorySlots[i].transform);
+
+            item.GetComponent<RectTransform>().localPosition = Vector3.zero;
         }
     }
 
@@ -43,6 +47,11 @@ public class InventoryMenu : SubMenu
     }
 
     public void ItemDroppedMethod()
+    { 
+        
+    }
+
+    public void rearrangeItems()
     { 
         
     }

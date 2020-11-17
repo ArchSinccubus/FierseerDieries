@@ -10,7 +10,11 @@ public class DialogueBoxManager : MonoBehaviour
     public TextMesh DialogueText;
 
     List<String> TextLoadout;
-    int CurrTextIndex;
+
+    List<DialogueStruct> DiLoadout;
+
+
+    int CurrTextIndex, currDiIndex;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +28,7 @@ public class DialogueBoxManager : MonoBehaviour
 
     }
 
-    public void init(Dialogue dialogue)
+    public void init2(Dialogue dialogue)
     {
         DialogueSprite.sprite = dialogue.Face;
 
@@ -42,6 +46,42 @@ public class DialogueBoxManager : MonoBehaviour
     }
 
 
+    public void init(Dialogue dialogue)
+    {
+        DiLoadout = dialogue.Lines;
+        currDiIndex = 0;
+
+        TextLoadout = createLoadlout(DiLoadout[0].Text);
+
+        PositionImage(DiLoadout[0].Face);
+
+
+        CurrTextIndex = 0;
+
+        DialogueText.text = TextLoadout[CurrTextIndex];
+
+        gameObject.SetActive(true);
+    }
+
+    public void LoadDialogue()
+    {
+        currDiIndex++;
+
+        TextLoadout = createLoadlout(DiLoadout[currDiIndex].Text);
+
+        CurrTextIndex = 0;
+
+        PositionImage(DiLoadout[currDiIndex].Face);
+    }
+
+    public void PositionImage(Sprite sprite)
+    {
+        DialogueSprite.sprite = sprite;
+
+        var bounds = DialogueSprite.sprite.bounds;
+        var factor = 2.3f / bounds.size.y;
+        DialogueSprite.transform.localScale = new Vector3(factor, factor, factor);
+    }
 
     public void LeafThrough()
     {
@@ -49,7 +89,14 @@ public class DialogueBoxManager : MonoBehaviour
 
         if (CurrTextIndex >= TextLoadout.Count)
         {
-            CloseDialogueBox();
+            if (currDiIndex < DiLoadout.Count)
+            {
+                LoadDialogue();
+            }
+            else
+            {
+                CloseDialogueBox();
+            }
         }
         else
         {

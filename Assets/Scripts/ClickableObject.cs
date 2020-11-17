@@ -1,4 +1,5 @@
 ﻿using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +9,13 @@ public class ClickableObject : SceneObject
 {
     public bool glowWhenClick;
 
+    public bool OneTime;
+
+    private bool Activated;
+
     [SerializeField]
     protected UnityEvent clickEvent;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +31,12 @@ public class ClickableObject : SceneObject
 
     private void OnMouseDown()
     {
-        clickEvent.Invoke();
+        if ((OneTime && !Activated) || !OneTime)
+        {
+           clickEvent.Invoke();
+            Activated = true;
+        }
+
         Debug.Log("AAAAAAAAAAA");
     }
 

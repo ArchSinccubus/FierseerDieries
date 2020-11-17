@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Item
 {
     public string Name;
-    public Texture Image;
+    public Sprite Image;
     public string Description;
 
     public Item()

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -55,7 +56,9 @@ public class GameController : MonoBehaviour
 
     public void AddItem(String ItemID)
     {
-        
+        Item I = new Item(ItemDatabase.fetchItem(ItemID));
+
+        Inventory.Add(I);
     }
 
     public void RemoveItem(Item I)
@@ -65,6 +68,22 @@ public class GameController : MonoBehaviour
 
     public void StartObjectEffect()
     { }
+
+    public void AddMoney(int Amount)
+    {
+        Saponatas += Amount;
+    }
+
+    public bool RemoveMoney(int Amount)
+    {
+        if (Saponatas - Amount >= 0)
+        {
+            Saponatas -= Amount;
+            return true;
+        }
+
+        return false;
+    }
 
     public void OpenDialogue(Dialogue Di)
     {

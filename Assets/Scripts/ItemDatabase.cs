@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemDatabase : MonoBehaviour
 {
-    public List<Texture> ItemImages;
+    public List<Sprite> ItemImages;
 
     public Dictionary<string, Item> Items;
 
