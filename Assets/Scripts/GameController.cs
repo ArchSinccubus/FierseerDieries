@@ -67,7 +67,9 @@ public class GameController : MonoBehaviour
     }
 
     public void StartObjectEffect()
-    { }
+    { 
+    
+    }
 
     public void AddMoney(int Amount)
     {

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ItemDragger : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IDragHandler
+public class ItemDragger : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IDragHandler, IEndDragHandler
 {
     public delegate void ItemDropped();
 
@@ -24,26 +24,29 @@ public class ItemDragger : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     // Update is called once per frame
     void Update()
     {
-        if (Drag)
-        {
-            this.GetComponent<RectTransform>().position = Input.mousePosition;
-        }
+
     }
 
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        itemDroppedEvent();
-        Drag = false;
+        
 
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Drag = true;
+        
     }
 
     public void OnDrag(PointerEventData eventData)
+    {
+        
+        this.GetComponent<RectTransform>().position = Input.mousePosition;
+
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
     {
         
     }
