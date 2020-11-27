@@ -75,6 +75,11 @@
     <Compile Include="Assets\Scripts\ArrowColliderManager.cs" />
     <Compile Include="Assets\Scripts\GameScene.cs" />
     <Compile Include="Assets\Scripts\DialogueBoxManager.cs" />
+    <Compile Include="Assets\Scripts\CombatSet\CombatCharacter.cs" />
+    <Compile Include="Assets\Scripts\CombatSet\PlayerCharacter.cs" />
+    <Compile Include="Assets\Scripts\CombatSet\EnemyCharacter.cs" />
+    <Compile Include="Assets\Scripts\CombatSet\CombatManager.cs" />
+    <Compile Include="Assets\Scripts\CombatSet\CombatAction.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
