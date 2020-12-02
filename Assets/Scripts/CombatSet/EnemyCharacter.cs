@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyCharacter : CombatCharacter
 {
-    public CombatAction[] Actions;
 
     // Start is called before the first frame update
     void Start()

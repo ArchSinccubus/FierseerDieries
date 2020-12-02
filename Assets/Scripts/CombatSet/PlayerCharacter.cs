@@ -4,10 +4,35 @@ using UnityEngine;
 
 public class PlayerCharacter : CombatCharacter
 {
-    public CombatAction[] Actions;
 
     public int AP;
 
+    private int currAP;
+    public int CurrAP
+    {
+        get => currAP; set
+
+        {
+            if (currAP != value)
+            {
+                APChanged();
+            }
+
+            if (value > AP)
+            {
+                currAP = AP;
+            }
+            else if (value < 0)
+            {
+                currAP = value;
+            }
+            else
+            {
+                currAP = value;
+            }
+
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +47,7 @@ public class PlayerCharacter : CombatCharacter
 
     public bool CanDoAction(CombatAction CA)
     {
-        return AP - CA.APCost >= 0;
+        return CurrAP - CA.APCost >= 0;
     }
 
     public override void DoAction(CombatAction CA)
@@ -31,5 +56,15 @@ public class PlayerCharacter : CombatCharacter
         {
 
         }
+    }
+
+    public override void StartTurn()
+    {
+        CurrAP = AP;
+    }
+
+    public void APChanged()
+    { 
+    
     }
 }
