@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\ArrowColliderManager.cs" />
     <Compile Include="Assets\Scripts\GameScene.cs" />
     <Compile Include="Assets\Scripts\DialogueBoxManager.cs" />
+    <Compile Include="Assets\ActionButtonManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

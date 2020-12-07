@@ -34,7 +34,7 @@ public abstract class CombatCharacter : MonoBehaviour
 
         } }
 
-    public virtual void initForBattle()
+    public virtual void InitForBattle()
     {
 
     }
@@ -51,7 +51,7 @@ public abstract class CombatCharacter : MonoBehaviour
 
     }
 
-    public bool hitAC()
+    public bool HitAC()
     {
         return false;
 
@@ -70,5 +70,10 @@ public abstract class CombatCharacter : MonoBehaviour
     public void HPChanged()
     {
 
+    }
+
+    public virtual void Die()
+    { 
+    
     }
 }
