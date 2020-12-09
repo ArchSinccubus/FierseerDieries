@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\CombatSet\EnemyCharacter.cs" />
     <Compile Include="Assets\Scripts\SceneObject.cs" />
     <Compile Include="Assets\Scripts\ItemDragger.cs" />
+    <Compile Include="Assets\Scripts\CombatSet\ActionButtonManager.cs" />
     <Compile Include="Assets\Scripts\ItemDatabase.cs" />
     <Compile Include="Assets\Scripts\DialogueMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenuController.cs" />
@@ -80,7 +81,8 @@
     <Compile Include="Assets\Scripts\ArrowColliderManager.cs" />
     <Compile Include="Assets\Scripts\GameScene.cs" />
     <Compile Include="Assets\Scripts\DialogueBoxManager.cs" />
-    <Compile Include="Assets\ActionButtonManager.cs" />
+    <Compile Include="Assets\Scripts\CombatSet\LifeBarController.cs" />
+    <Compile Include="Assets\Scripts\CombatSet\SkillS\SkillScriptableObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

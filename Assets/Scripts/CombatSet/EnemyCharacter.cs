@@ -21,4 +21,9 @@ public class EnemyCharacter : CombatCharacter
     {
 
     }
+
+    private void OnMouseDown()
+    {
+        
+    }
 }

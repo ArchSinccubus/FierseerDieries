@@ -5,6 +5,9 @@ using UnityEngine;
 
 public enum Element { Phyiscal, fire, superFire, ExtraFire, MegaFire, BurnYourAssOffFire }
 
+public enum ActionTypes { Defend, Attack, DirectDamage, Heal, DirectHealing, Status, Steal, Pass, OpenSubMenu }
+
+
 [Serializable]
 public class CombatAction
 {
@@ -12,6 +15,8 @@ public class CombatAction
     public string name;
     public string Description;
     public int Damage;
-    public Element DamateType; 
-    
+    public Element DamateType;
+
+    public bool SingleTarget;
+    public List<CombatCharacter> Target;
 }

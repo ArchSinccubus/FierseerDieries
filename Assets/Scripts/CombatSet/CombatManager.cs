@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum CombatStage { PlayerTurn, ActionPicked, ActionPlaying, EnemyTurn}
+public enum CombatStageEnum { PlayerTurn, ActionPicked, ActionPlaying, EnemyTurn}
 
 public class CombatManager : MonoBehaviour
 {
@@ -17,7 +18,11 @@ public class CombatManager : MonoBehaviour
 
     public ActionButtonManager[] battleButtonArray;
 
-    
+    public CombatStageEnum Stage;
+
+    public CombatAction PickedAction;
+
+    public static CombatManager Instance;
 
     public void initCombat(EnemyCharacter[] Enemies)
     {
@@ -35,7 +40,16 @@ public class CombatManager : MonoBehaviour
             }
         }
 
-        
+        while (TurnOrderList[0] != AzmanChar)
+        {
+            CombatCharacter temp = TurnOrderList[0];
+
+            TurnOrderList.RemoveAt(0);
+
+            TurnOrderList.Add(temp);
+        }
+
+        initPlayer();
     }
 
     public void initPlayer()
@@ -79,9 +93,38 @@ public class CombatManager : MonoBehaviour
     
     }
 
+    public void SetButtonsInactive(ActionButtonManager button)
+    {
+        foreach (var item in battleButtonArray)
+        {
+            item.gameObject.SetActive(false);
+        }
+
+        if (button != null)
+        {
+            button.gameObject.SetActive(true);
+        }
+    
+    }
+
+    public void SetButtonsActive()
+    {
+        foreach (var item in battleButtonArray)
+        {
+            item.gameObject.SetActive(true);
+        }
+
+
+    }
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
+        Instance = this;
+
         initCombat(EnemiesArray);
     }
 

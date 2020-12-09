@@ -39,6 +39,7 @@ public class GameController : MonoBehaviour
         
     }
 
+    #region SceneActions
     public void SceneTransition(int OrigSceneID, int NewSceneID)
     {
         Scenes[OrigSceneID].gameObject.SetActive(false);
@@ -62,13 +63,13 @@ public class GameController : MonoBehaviour
     }
 
     public void RemoveItem(Item I)
-    { 
-        
+    {
+
     }
 
     public void StartObjectEffect()
-    { 
-    
+    {
+
     }
 
     public void AddMoney(int Amount)
@@ -90,6 +91,7 @@ public class GameController : MonoBehaviour
     public void OpenDialogue(Dialogue Di)
     {
         DB.init(Di);
-    }
+    } 
+    #endregion
 
 }

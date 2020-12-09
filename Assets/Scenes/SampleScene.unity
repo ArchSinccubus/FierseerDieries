@@ -297,6 +297,7 @@ MonoBehaviour:
   Speed: 5
   HP: 10
   AC: 11
+  HPBar: {fileID: 986214403307763927}
   Actions:
   - APCost: 1
     name: Strike
@@ -700,6 +701,7 @@ GameObject:
   - component: {fileID: 247691732}
   - component: {fileID: 247691733}
   - component: {fileID: 247691734}
+  - component: {fileID: 247691735}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -788,12 +790,39 @@ MonoBehaviour:
   Speed: 2
   HP: 10
   AC: 9
+  HPBar: {fileID: 0}
   Actions:
   - APCost: 0
     name: Attack
     Description: Attack
     Damage: 2
     DamateType: 0
+--- !u!61 &247691735
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247691731}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &267949325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,6 +1196,7 @@ GameObject:
   - component: {fileID: 332465959}
   - component: {fileID: 332465960}
   - component: {fileID: 332465961}
+  - component: {fileID: 332465962}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1255,12 +1285,39 @@ MonoBehaviour:
   Speed: 2
   HP: 10
   AC: 9
+  HPBar: {fileID: 0}
   Actions:
   - APCost: 0
     name: Attack
     Description: Attack
     Damage: 2
     DamateType: 0
+--- !u!61 &332465962
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332465958}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &433529721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,6 +1952,7 @@ GameObject:
   - component: {fileID: 567651992}
   - component: {fileID: 567651993}
   - component: {fileID: 567651994}
+  - component: {fileID: 567651995}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1983,12 +2041,39 @@ MonoBehaviour:
   Speed: 4
   HP: 10
   AC: 9
+  HPBar: {fileID: 0}
   Actions:
   - APCost: 0
     name: Attack
     Description: Attack
     Damage: 2
     DamateType: 0
+--- !u!61 &567651995
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567651991}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &596406348
 GameObject:
   m_ObjectHideFlags: 0
@@ -2776,6 +2861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 975405163}
   - component: {fileID: 975405164}
+  - component: {fileID: 975405165}
   m_Layer: 0
   m_Name: LifeBar (5)
   m_TagString: Untagged
@@ -2854,6 +2940,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &975405165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975405162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e5e42c25ec6984c99b314edd547a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bar: {fileID: 975405164}
 --- !u!1 &1035961009
 GameObject:
   m_ObjectHideFlags: 0
@@ -3707,7 +3806,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1343223457}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1343223459}
+        m_TargetAssemblyTypeName: ActionButtonManager, Assembly-CSharp
+        m_MethodName: ButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1343223457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3764,7 +3875,7 @@ MonoBehaviour:
     Description: 
     Damage: 0
     DamateType: 0
-  ButtonText: {fileID: 0}
+  ButtonText: {fileID: 1484899216}
 --- !u!1 &1353108957
 GameObject:
   m_ObjectHideFlags: 0
@@ -3895,6 +4006,7 @@ GameObject:
   - component: {fileID: 1412096493}
   - component: {fileID: 1412096494}
   - component: {fileID: 1412096495}
+  - component: {fileID: 1412096496}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -3983,12 +4095,39 @@ MonoBehaviour:
   Speed: 2
   HP: 10
   AC: 9
+  HPBar: {fileID: 0}
   Actions:
   - APCost: 0
     name: Attack
     Description: Attack
     Damage: 2
     DamateType: 0
+--- !u!61 &1412096496
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412096492}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1472554990
 GameObject:
   m_ObjectHideFlags: 0
@@ -4865,6 +5004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1823070071}
   - component: {fileID: 1823070072}
+  - component: {fileID: 1823070073}
   m_Layer: 0
   m_Name: LifeBar (3)
   m_TagString: Untagged
@@ -4943,6 +5083,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1823070073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823070070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e5e42c25ec6984c99b314edd547a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bar: {fileID: 1823070072}
 --- !u!1 &1825554543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 718110638311832644, guid: e781f2940231fd44babc088bdfe984de, type: 3}
@@ -4958,6 +5111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1830738606}
   - component: {fileID: 1830738607}
+  - component: {fileID: 1830738608}
   m_Layer: 0
   m_Name: LifeBar (2)
   m_TagString: Untagged
@@ -5036,6 +5190,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1830738608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830738605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e5e42c25ec6984c99b314edd547a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bar: {fileID: 1830738607}
 --- !u!1 &1837159510
 GameObject:
   m_ObjectHideFlags: 0
@@ -5046,6 +5213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1837159511}
   - component: {fileID: 1837159512}
+  - component: {fileID: 1837159513}
   m_Layer: 0
   m_Name: LifeBar (1)
   m_TagString: Untagged
@@ -5124,6 +5292,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1837159513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837159510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e5e42c25ec6984c99b314edd547a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bar: {fileID: 1837159512}
 --- !u!1 &1857516199
 GameObject:
   m_ObjectHideFlags: 0
@@ -5134,6 +5315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1857516200}
   - component: {fileID: 1857516201}
+  - component: {fileID: 1857516202}
   m_Layer: 0
   m_Name: LifeBar (4)
   m_TagString: Untagged
@@ -5212,6 +5394,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1857516202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857516199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e5e42c25ec6984c99b314edd547a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bar: {fileID: 1857516201}
 --- !u!1 &1899891657
 GameObject:
   m_ObjectHideFlags: 0
@@ -5351,7 +5546,7 @@ MonoBehaviour:
     Description: 
     Damage: 0
     DamateType: 0
-  ButtonText: {fileID: 0}
+  ButtonText: {fileID: 1664505656}
 --- !u!1 &1905868163
 GameObject:
   m_ObjectHideFlags: 0
@@ -5942,11 +6137,18 @@ MonoBehaviour:
   - {fileID: 567651994}
   SortedSpeedList: []
   TurnOrderList: []
-  APText: {fileID: 0}
+  APText: {fileID: 1541857939}
   battleButtonArray:
   - {fileID: 1343223459}
   - {fileID: 2058425785}
   - {fileID: 1899891662}
+  Stage: 0
+  PickedAction:
+    APCost: 0
+    name: 
+    Description: 
+    Damage: 0
+    DamateType: 0
 --- !u!1 &2058425780
 GameObject:
   m_ObjectHideFlags: 0
@@ -6086,7 +6288,7 @@ MonoBehaviour:
     Description: 
     Damage: 0
     DamateType: 0
-  ButtonText: {fileID: 0}
+  ButtonText: {fileID: 1534215787}
 --- !u!1 &2095349288
 GameObject:
   m_ObjectHideFlags: 0
@@ -6822,6 +7024,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d6d7f36ecd743949a19087ad56fa992, type: 3}
+--- !u!1 &986214403307763925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 986214402219505864, guid: 2d6d7f36ecd743949a19087ad56fa992, type: 3}
+  m_PrefabInstance: {fileID: 986214403307763924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &986214403307763926 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 986214402219505866, guid: 2d6d7f36ecd743949a19087ad56fa992, type: 3}
+  m_PrefabInstance: {fileID: 986214403307763924}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986214403307763925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &986214403307763927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986214403307763925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e5e42c25ec6984c99b314edd547a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bar: {fileID: 986214403307763926}
 --- !u!1001 &7909565579802472537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6916,12 +7147,43 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2782989663864825516, guid: 205792ec009af924aafd15d06ec09e23, type: 3}
   m_PrefabInstance: {fileID: 7909565579802472537}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7909565579802472539}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39019796111bca84185a9eb581967e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7909565579802472539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7909565579705312746, guid: 205792ec009af924aafd15d06ec09e23, type: 3}
+  m_PrefabInstance: {fileID: 7909565579802472537}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &7909565579802472540
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7909565579802472539}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1001 &9204906263498712127
 PrefabInstance:
   m_ObjectHideFlags: 0

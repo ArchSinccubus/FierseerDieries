@@ -9,16 +9,12 @@ public abstract class CombatCharacter : MonoBehaviour
 
     private int currHP;
 
+    public LifeBarController HPBar;
+
     public CombatAction[] Actions;
 
     public int CurrHP { get => currHP; set
-
         {
-            if (currHP != value)
-            {
-                HPChanged();
-            }
-
             if (value > HP)
             {
                 currHP = HP;
@@ -32,11 +28,13 @@ public abstract class CombatCharacter : MonoBehaviour
                 currHP = value;
             }
 
-        } }
+            HPChanged();
+        }
+    }
 
     public virtual void InitForBattle()
     {
-
+        currHP = HP;
     }
 
     // Start is called before the first frame update
@@ -67,9 +65,9 @@ public abstract class CombatCharacter : MonoBehaviour
 
     }
 
-    public void HPChanged()
+    void HPChanged()
     {
-
+        HPBar.CalculateHPDiff(HP, currHP);
     }
 
     public virtual void Die()
