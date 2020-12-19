@@ -20,7 +20,7 @@ public class CombatManager : MonoBehaviour
 
     public CombatStageEnum Stage;
 
-    public CombatAction PickedAction;
+    public SkillScriptableObject PickedAction;
 
     public static CombatManager Instance;
 

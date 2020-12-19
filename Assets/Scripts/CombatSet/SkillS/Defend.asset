@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc15338c8fed434fa1412bed29218c1, type: 3}
+  m_Name: Defend
+  m_EditorClassIdentifier: 
+  APCost: 3
+  Name: Defend
+  Description: 
+  Effects:
+  - UserEffectiveStat: 3
+    UseUserStat: 1
+    EnemyAffectedStat: 0
+    element: 0
+    Percentage: 1
+    TargetSelf: 1
+    EffectAmount: 50
+    EffectTurnTime: 1
+  SingleTarget: 0
+  Target: []

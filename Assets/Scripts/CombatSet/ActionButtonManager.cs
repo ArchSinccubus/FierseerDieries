@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class ActionButtonManager : MonoBehaviour
 {
-    public CombatAction Action;
+    public SkillScriptableObject Action;
 
     public Text ButtonText;
 
-    public void InitButton(CombatAction Action)
+    public void InitButton(SkillScriptableObject Action)
     {
         this.Action = Action;
 
-        ButtonText.text = Action.name;
+        ButtonText.text = Action.Name;
     }
 
     // Start is called before the first frame update

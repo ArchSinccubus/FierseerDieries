@@ -39,7 +39,7 @@ public class GameController : MonoBehaviour
         
     }
 
-    #region SceneActions
+    
     public void SceneTransition(int OrigSceneID, int NewSceneID)
     {
         Scenes[OrigSceneID].gameObject.SetActive(false);
@@ -52,6 +52,7 @@ public class GameController : MonoBehaviour
         MainMenu.gameObject.SetActive(true);
     }
 
+    #region SceneActions
     public void AddToJournal()
     { }
 

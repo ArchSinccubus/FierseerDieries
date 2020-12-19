@@ -299,21 +299,10 @@ MonoBehaviour:
   AC: 11
   HPBar: {fileID: 986214403307763927}
   Actions:
-  - APCost: 1
-    name: Strike
-    Description: Hit the enemy. That's about it lol.
-    Damage: 2
-    DamateType: 0
-  - APCost: 3
-    name: Firebolt
-    Description: Shoot a fireball
-    Damage: 4
-    DamateType: 1
-  - APCost: 6
-    name: AAAAAAAAAAAAAAAA
-    Description: AAAAAAAAAAAAAAAAA
-    Damage: 10
-    DamateType: 5
+  - {fileID: 11400000, guid: 4eabb7e82b9ceae4e86fb53488c71672, type: 2}
+  - {fileID: 11400000, guid: 79d74b92559e9ef4daefafa718d7ae0f, type: 2}
+  - {fileID: 11400000, guid: 735fe504a4cdd3e4a9dbb5fc7fa4cd81, type: 2}
+  - {fileID: 11400000, guid: adfdd72d18c89dd4cba3d4339eead07b, type: 2}
   AP: 6
 --- !u!1 &61036150
 GameObject:
@@ -792,11 +781,7 @@ MonoBehaviour:
   AC: 9
   HPBar: {fileID: 0}
   Actions:
-  - APCost: 0
-    name: Attack
-    Description: Attack
-    Damage: 2
-    DamateType: 0
+  - {fileID: 0}
 --- !u!61 &247691735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1287,11 +1272,7 @@ MonoBehaviour:
   AC: 9
   HPBar: {fileID: 0}
   Actions:
-  - APCost: 0
-    name: Attack
-    Description: Attack
-    Damage: 2
-    DamateType: 0
+  - {fileID: 0}
 --- !u!61 &332465962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2043,11 +2024,7 @@ MonoBehaviour:
   AC: 9
   HPBar: {fileID: 0}
   Actions:
-  - APCost: 0
-    name: Attack
-    Description: Attack
-    Damage: 2
-    DamateType: 0
+  - {fileID: 0}
 --- !u!61 &567651995
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3869,12 +3846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728f4779f3dbcfd4381300597d9551b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Action:
-    APCost: 0
-    name: 
-    Description: 
-    Damage: 0
-    DamateType: 0
+  Action: {fileID: 0}
   ButtonText: {fileID: 1484899216}
 --- !u!1 &1353108957
 GameObject:
@@ -4097,11 +4069,7 @@ MonoBehaviour:
   AC: 9
   HPBar: {fileID: 0}
   Actions:
-  - APCost: 0
-    name: Attack
-    Description: Attack
-    Damage: 2
-    DamateType: 0
+  - {fileID: 0}
 --- !u!61 &1412096496
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5540,12 +5508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728f4779f3dbcfd4381300597d9551b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Action:
-    APCost: 0
-    name: 
-    Description: 
-    Damage: 0
-    DamateType: 0
+  Action: {fileID: 0}
   ButtonText: {fileID: 1664505656}
 --- !u!1 &1905868163
 GameObject:
@@ -6143,12 +6106,7 @@ MonoBehaviour:
   - {fileID: 2058425785}
   - {fileID: 1899891662}
   Stage: 0
-  PickedAction:
-    APCost: 0
-    name: 
-    Description: 
-    Damage: 0
-    DamateType: 0
+  PickedAction: {fileID: 0}
 --- !u!1 &2058425780
 GameObject:
   m_ObjectHideFlags: 0
@@ -6282,12 +6240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728f4779f3dbcfd4381300597d9551b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Action:
-    APCost: 0
-    name: 
-    Description: 
-    Damage: 0
-    DamateType: 0
+  Action: {fileID: 0}
   ButtonText: {fileID: 1534215787}
 --- !u!1 &2095349288
 GameObject:
