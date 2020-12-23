@@ -296,13 +296,14 @@ MonoBehaviour:
   Strength: 3
   Speed: 5
   HP: 10
-  AC: 11
+  Defense: 0
   HPBar: {fileID: 986214403307763927}
   Actions:
   - {fileID: 11400000, guid: 4eabb7e82b9ceae4e86fb53488c71672, type: 2}
   - {fileID: 11400000, guid: 79d74b92559e9ef4daefafa718d7ae0f, type: 2}
   - {fileID: 11400000, guid: 735fe504a4cdd3e4a9dbb5fc7fa4cd81, type: 2}
   - {fileID: 11400000, guid: adfdd72d18c89dd4cba3d4339eead07b, type: 2}
+  ContinousEffectsList: []
   AP: 6
 --- !u!1 &61036150
 GameObject:
@@ -778,10 +779,11 @@ MonoBehaviour:
   Strength: 2
   Speed: 2
   HP: 10
-  AC: 9
+  Defense: 0
   HPBar: {fileID: 0}
   Actions:
   - {fileID: 0}
+  ContinousEffectsList: []
 --- !u!61 &247691735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -922,8 +924,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.172}
-  m_AnchoredPosition: {x: 0.000061035156, y: -0.47998047}
-  m_SizeDelta: {x: -0.66674805, y: -0.2925415}
+  m_AnchoredPosition: {x: -0.16668701, y: -0.31311035}
+  m_SizeDelta: {x: -0.33325195, y: -0.6262512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &296039619
 MonoBehaviour:
@@ -1269,10 +1271,11 @@ MonoBehaviour:
   Strength: 2
   Speed: 2
   HP: 10
-  AC: 9
+  Defense: 0
   HPBar: {fileID: 0}
   Actions:
   - {fileID: 0}
+  ContinousEffectsList: []
 --- !u!61 &332465962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2021,10 +2024,11 @@ MonoBehaviour:
   Strength: 2
   Speed: 4
   HP: 10
-  AC: 9
+  Defense: 0
   HPBar: {fileID: 0}
   Actions:
   - {fileID: 0}
+  ContinousEffectsList: []
 --- !u!61 &567651995
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3847,6 +3851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Action: {fileID: 0}
+  ButtonObject: {fileID: 1343223456}
   ButtonText: {fileID: 1484899216}
 --- !u!1 &1353108957
 GameObject:
@@ -4066,10 +4071,11 @@ MonoBehaviour:
   Strength: 2
   Speed: 2
   HP: 10
-  AC: 9
+  Defense: 0
   HPBar: {fileID: 0}
   Actions:
   - {fileID: 0}
+  ContinousEffectsList: []
 --- !u!61 &1412096496
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5509,6 +5515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Action: {fileID: 0}
+  ButtonObject: {fileID: 1899891659}
   ButtonText: {fileID: 1664505656}
 --- !u!1 &1905868163
 GameObject:
@@ -6241,6 +6248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Action: {fileID: 0}
+  ButtonObject: {fileID: 2058425782}
   ButtonText: {fileID: 1534215787}
 --- !u!1 &2095349288
 GameObject:

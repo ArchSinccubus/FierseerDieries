@@ -97,12 +97,12 @@ public class CombatManager : MonoBehaviour
     {
         foreach (var item in battleButtonArray)
         {
-            item.gameObject.SetActive(false);
+            item.ButtonObject.interactable = false;
         }
 
         if (button != null)
         {
-            button.gameObject.SetActive(true);
+            button.ButtonObject.interactable = true;
         }
     
     }
@@ -111,12 +111,11 @@ public class CombatManager : MonoBehaviour
     {
         foreach (var item in battleButtonArray)
         {
-            item.gameObject.SetActive(true);
+            item.ButtonObject.interactable = true;
         }
 
 
     }
-
 
 
 

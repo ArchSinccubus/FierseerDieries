@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\ArrowManager.cs" />
     <Compile Include="Assets\Scripts\CombatSet\EnemyCharacter.cs" />
     <Compile Include="Assets\Scripts\SceneObject.cs" />
+    <Compile Include="Assets\Scripts\CombatSet\SkillS\SkillEffect.cs" />
     <Compile Include="Assets\Scripts\ItemDragger.cs" />
     <Compile Include="Assets\Scripts\CombatSet\SkillS\SkillScriptableObject.cs" />
     <Compile Include="Assets\Scripts\CombatSet\ActionButtonManager.cs" />
@@ -83,7 +84,6 @@
     <Compile Include="Assets\Scripts\ArrowColliderManager.cs" />
     <Compile Include="Assets\Scripts\GameScene.cs" />
     <Compile Include="Assets\Scripts\DialogueBoxManager.cs" />
-    <Compile Include="Assets\Scripts\CombatSet\SkillS\SkillEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

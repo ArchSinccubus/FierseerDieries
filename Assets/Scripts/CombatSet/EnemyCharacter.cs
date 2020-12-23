@@ -24,6 +24,9 @@ public class EnemyCharacter : CombatCharacter
 
     private void OnMouseDown()
     {
-        
+        if (CombatManager.Instance.Stage == CombatStageEnum.ActionPicked)
+        {
+            CombatManager.Instance.PickedAction.Target.Add(this);
+        }
     }
 }

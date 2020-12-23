@@ -7,6 +7,8 @@ public class ActionButtonManager : MonoBehaviour
 {
     public SkillScriptableObject Action;
 
+    public Button ButtonObject;
+
     public Text ButtonText;
 
     public void InitButton(SkillScriptableObject Action)
